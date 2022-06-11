@@ -1,0 +1,19 @@
+CREATE TABLE inventory(
+    item_name VARCHAR(100),
+    price DECIMAL(8,2),
+    quantity INT
+)
+
+
+SELECT CURDATE();
+SELECT DAYOFWEEK(CURDATE());
+SELECT DATE_FORMAT(NOW(),'%w');
+SELECT DAYNAME(NOW());
+SELECT DATE_FORMAT(CURDATE(),'%m/%d/%Y');
+SELECT DATE_FORMAT(NOW(),'%M %D at %H:%i');
+
+CREATE TABLE tweet(
+    content VARCHAR(1000),
+    username VARCHAR(100),
+    time TIMESTAMP DEFAULT NOW()
+)

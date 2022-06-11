@@ -1,0 +1,1 @@
+SELECT UPPER(REVERSE('This string should be upper and reverse'))
