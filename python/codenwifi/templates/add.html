@@ -1,0 +1,53 @@
+{% extends 'bootstrap/base.html' %} {% block title %}Add A New Cafe{% endblock
+%}{% block styles %}
+<link rel="stylesheet" href="../static/css/styles.css" /> {% endblock %} {%
+block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+      <h1>Add a new cafe into the database</h1>
+      <form action="/add" method="POST">
+        {{ form.csrf_token }}
+        <p>
+          {{ form.cafe.label}}<br />
+          {{ form.cafe }} {% for error in form.cafe.errors %}
+          <span style="color: red"
+            >Entry must be between 3 and 20 letters
+          </span>
+          {% endfor %}
+        </p>
+        <p>
+          {{form.location.label}}<br />
+          {{ form.location }} {% for error in form.location.errors %}
+          <span style="color: red">Entry must be an URL </span>
+          {% endfor %}
+        </p>
+        <p>
+          {{form.coffee.label}}<br />
+          {{ form.coffee }} {% for error in form.coffee.errors %}
+          <span style="color: red">Entry must be an URL </span>
+          {% endfor %}
+        </p>
+        <p>
+          {{form.wifi.label}}<br />
+          {{ form.wifi }} {% for error in form.wifi.errors %}
+          <span style="color: red">Entry must be an URL </span>
+          {% endfor %}
+        </p>
+        <p>
+          {{form.power.label}}<br />
+          {{ form.power }} {% for error in form.power.errors %}
+          <span style="color: red">Entry must be an URL </span>
+          {% endfor %}
+        </p>
+
+        {{ form.submit }}
+      </form>
+      <p class="space-above">
+        <a href="{{ url_for('cafes')}}">See all cafes</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@300;400&display=swap");
+:root {
+  --red_bg: #ffcc66;
+  --white_bg: black;
+  --orange_ish: #ff9933;
+}
+
+/* Title */
+
+#title {
+  background-color: var(--red_bg);
+  color: var(--white_bg);
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.title-image {
+  /* width: 60%; */
+  transform: rotate(30deg);
+  position: absolute;
+}
+
+.btn:hover {
+  filter: contrast(150%);
+}
+h1 {
+  font-family: "Montserrat";
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/* Features */
+#features {
+  padding: 7%;
+  position: relative;
+  background-color: #fff;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item i {
+  font-size: 3rem;
+  color: var(--orange_ish);
+  padding: 3%;
+}
+
+.feature-item i:hover {
+  filter: contrast(200%);
+}
+
+.feature-item p {
+  color: #8f8f8f;
+}
+
+/* Testimonials */
+
+#testimonials {
+  padding: 7%;
+  text-align: center;
+  background-color: var(--orange_ish);
+  color: var(--white_bg);
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.testimonials_image {
+  width: 10%;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/* Press */
+
+#press {
+  background-color: var(--orange_ish);
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+#press img {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+#pricing {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+#pricing p {
+  margin-bottom: 4rem;
+}
+#pricing h2 {
+  margin-top: 4rem;
+}
+
+.card-header {
+  background-color: var(--orange_ish);
+}
+.card {
+  border: none;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--orange_ish);
+  color: var(--white_bg);
+  border: 1px solid white;
+}
+
+#cta {
+  padding: 7% 15%;
+  text-align: center;
+  color: var(--white_bg);
+  background-color: var(--red_bg);
+}
+
+#cta h3 {
+  font-family: "Montserrat";
+  font-size: 4rem;
+}
+
+#footer {
+  margin-top: 3rem;
+}
+#footer p {
+  text-align: center;
+}
+
+.link-list {
+  padding: 0;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-instagram,
+.fa-envelope {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  color: gray;
+}
+
+.fa-twitter:hover,
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-envelope:hover {
+  color: black;
+}
+.fa-google-play {
+  color: green;
+}
+@media (max-width: 1180px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    margin-top: 3rem;
+    position: static;
+    transform: rotate(0deg);
+    align-items: center;
+  }
+}

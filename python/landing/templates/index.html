@@ -1,0 +1,201 @@
+{% include 'head.html' %}
+<body>
+  <section id="title">
+    <!-- Nav Bar -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="" class="navbar-brand">Catoo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Meet new and interesting cats nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg">
+            <i class="fab fa-apple"></i> Download
+          </button>
+          <button type="button" class="btn btn-light btn-lg">
+            <i class="fab fa-google-play"></i> Download
+          </button>
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="title-image"
+            src="./static/images/iphone6.png"
+            alt="iphone-mockup"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-item col-lg-4">
+          <i class="fas fa-check-circle"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your cat could do it.</p>
+        </div>
+        <div class="feature-item col-lg-4">
+          <i class="fas fa-bullseye"></i>
+          <h3>Elite Clientele</h3>
+          <p>We have all the cats, the greatest cats.</p>
+        </div>
+        <div class="feature-item col-lg-4">
+          <i class="fas fa-heart"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your cat's life or your money back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>
+            I no longer have to sniff other cats for love. I've found the
+            hottest British on Catoo. Meaw.
+          </h2>
+          <img
+            class="testimonials_image"
+            src="./static/images/dog-img.jpg"
+            alt="dog-profile"
+          />
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">
+            My cat used to be so lonely, but with Catoo's help, they've found
+            the love of their life. I think.
+          </h2>
+          <img
+            class="testimonials_image"
+            src="./static/images/lady-img.jpg"
+            alt="lady-profile"
+          />
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-target="#testimonials-carousel"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-target="#testimonials-carousel"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Press -->
+
+  <section id="press">
+    <img src="./static/images/techcrunch.png" alt="tc-logo" />
+    <img src="./static/images/tnw.png" alt="tnw-logo" />
+    <img src="./static/images/bizinsider.png" alt="biz-insider-logo" />
+    <img src="./static/images/mashable.png" alt="mashable-logo" />
+  </section>
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <h2>A Plan for Every Cat's Needs</h2>
+    <p>Simple and affordable price plans for your and your cat.</p>
+
+    <div class="row">
+      <div class="card col-lg-4 col-md-6">
+        <div class="card-header"><h3>Munchkin</h3></div>
+        <div class="card-body">
+          <h2>Free</h2>
+          <p>NONE</p>
+          <p>5 Matches Per Day</p>
+          <p>10 Messages Per Day</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark">
+            Sign Up
+          </button>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 col-md-6">
+        <div class="card-header"><h3>Siberian</h3></div>
+        <div class="card-body">
+          <h2>$49 / mo</h2>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark">
+            Sign Up
+          </button>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 col-md-12">
+        <div class="card-header"><h3>Maine coon</h3></div>
+        <div class="card-body">
+          <h2>$99 / mo</h2>
+          <p>Priority Listing</p>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+    <h3>Find the True Love of Your Cat's Life Today.</h3>
+    <button type="button" class="btn btn-lg btn-dark">
+      <i class="fab fa-apple"></i> Download
+    </button>
+    <button type="button" class="btn btn-lg btn-light">
+      <i class="fab fa-google-play"></i> Download
+    </button>
+  </section>
+
+  <!-- Footer -->
+  {% include 'footer.html' %}
+</body>

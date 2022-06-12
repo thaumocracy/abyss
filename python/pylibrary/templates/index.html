@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+    {% if books|length < 1 %}
+    <p>Library is empty</p>
+    {% else %}
+    <ul>
+      {% for book in books %}
+      <li>
+        {{ book.title}} by {{book.author}} || Rating: {{('★') *
+        (book.rating|int)}}
+        <a href="{{url_for('edit',id=book.id)}}"
+          ><img
+            style="width: 20px; height: auto"
+            src="../static/imgs/edit.png"
+            alt=""
+        /></a>
+        <a href="{{url_for('delete',id=book.id)}}"
+          ><img
+            style="width: 20px; height: auto"
+            src="../static/imgs/delete.png"
+            alt=""
+        /></a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <a href="{{url_for('add')}}">Add New Book</a>
+  </body>
+</html>
