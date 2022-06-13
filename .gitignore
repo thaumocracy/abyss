@@ -21,6 +21,6 @@ kepler-data.csv
 /iknow/
 /site/
 /ruch/
-**.jpeg
-**.jpg
-**.png
+*.jpeg
+*.jpg
+*.png
