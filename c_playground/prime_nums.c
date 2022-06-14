@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+bool isPrime(int num);
 int main()
 {
     printf("\n=== Prime Numbers ===\n\n");
@@ -22,16 +23,7 @@ int main()
 
     for (int number = 2; number < upperLimit; number++)
     {
-        bool isPrime = true;
-        for (int i = 2; i < number; i++)
-        {
-            if (number % i == 0)
-            {
-                isPrime = false;
-                break;
-            }
-        }
-        if (isPrime)
+        if (isPrime(number))
         {
             printf("%d\n", number);
         }
@@ -50,16 +42,8 @@ int main()
 
     for (int number = lowerLimit; number < MAX; number++)
     {
-        bool isPrime = true;
-        for (int i = 2; i < number; i++)
-        {
-            if (number % i == 0)
-            {
-                isPrime = false;
-                break;
-            }
-        }
-        if (isPrime)
+
+        if (isPrime(number))
         {
             firstPrimeNumber = number;
             break;
@@ -79,4 +63,19 @@ exit_program:
     printf("\n----------------------\n");
     printf("Some dummy cleanup code...");
     return EXIT_SUCCESS;
+}
+
+bool isPrime(int num)
+{
+    bool isPrime = true;
+    for (int i = 2; i < num; i++)
+    {
+        if (num % i == 0)
+        {
+            isPrime = false;
+            break;
+        }
+    }
+
+    return isPrime;
 }
