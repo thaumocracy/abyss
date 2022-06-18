@@ -2,7 +2,7 @@
 import { initializeApp, applicationDefault, cert } from "firebase-admin/app";
 import { getFirestore, Timestamp, FieldValue } from "firebase-admin/firestore";
 import Express from "express";
-const serviceAccount = ?;
+import key from "./key.mjs";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,12 +19,11 @@ const firebaseConfig = {
 // Initialize Firebase
 
 initializeApp({
-  credential: cert(serviceAccount),
+  credential: cert(key),
 });
 const db = getFirestore();
 const app = Express();
 
-// Get a list of cities from your database
 async function getMemes(db) {
   const memesCol = collection(db, "memes");
   const memeSnapshot = await getDocs(memesCol);
