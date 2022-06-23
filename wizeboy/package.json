@@ -1,0 +1,14 @@
+{
+  "name": "wizeboy",
+  "version": "1.0.0",
+  "description": "private discord bot",
+  "main": "app.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.8.0"
+  }
+}
