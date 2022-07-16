@@ -25,3 +25,5 @@ kepler-data.csv
 *.jpg
 *.png
 key.*
+keys.*
+*.csv
